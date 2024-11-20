@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Bestell-App</title>
     <script src="./script.js"></script>
     <script src="./json.js"></script>
     <script src="./template.js"></script>
 </head>
-<body onload="renderMenus()">
+<body  class="p120" onload="init()">
     <header>
         <h1>Bestell-App</h1>
+        <button onclick="openShoppingCart()">Warenkorb</button>
+        <!-- <div class="burger_menu" onclick="openShoppingCart()">
+            <div class="burger_bar"></div>
+            <div class="burger_bar"></div>
+            <div class="burger_bar"></div> -->
+        </div>
     </header>
     <main>
-        <div id="menusContent">
-            
-        </div>
+        <aside class="p40 d_none" id="shoppingCart">
+            <div class="shoppingCart">
+                <h2>Warenkorb</h2>
+                <div id="shoppingCartList">list</div>
+            </div>
+        </aside>
+        <section id="pizza_section">
+            <h2>Pizzen</h2>
+            <div id="menusContent"></div>
+        </section>
     </main>
 </body>
 </html>

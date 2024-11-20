@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d_none {
+    display: none;
+}
+.d_flex {
+    display: flex;
+}
+.p120 {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.p40 {
+    padding: 40px;
+}

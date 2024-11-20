@@ -2,22 +2,26 @@ let menus = [
     {
         'name': 'Pizza Magerita',
         'price': 12.99,
-        'png': 'img/pizza-magerita.jpg',
+        'png': './img/pizza-magerita.jpg',
+        'description': '<b>"Einfach" lecker: </b><br>Pizza mit Tomaten, Morzarella und Basilikum'
     },
     {
         'name': 'Pizza Salami',
         'price': 13.99,
-        'png': '',
+        'png': './img/pizza-salami.jpg',
+        'description': '<b>Der Klassiker: </b><br>Pizza mit zwei sorten Salami und Käse'
     },
     {
         'name': 'Pizza Hawaii',
         'price': 14.99,
-        'png': 'img/pizza-hawaii',        
+        'png': './img/pizza-hawaii.jpg',
+        'description': '<b>Man liebt sie, oder man hasst sie: </b><br>Pizza mit Ananas, Kochschinken und Käse'        
     },
     {
         'name': 'Pizza Diavolo',
         'price': 15.99,
-        'png': 'img/pizza-diavolo',
+        'png': './img/pizza-diavolo.jpg',
+        'description': '<b>Auf die Schärfe kommt es an: </b><br>Pizza mit scharfer Salami, scharfen Pepperoni, Oliven und Käse'
     }
 ]
 
