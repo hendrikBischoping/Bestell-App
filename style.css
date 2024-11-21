@@ -9,17 +9,7 @@
     align-items: center;
     justify-content: center;
 }
-/* .burger_menu:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-}
-.burger_bar {
-    background-color: black;
-    border-radius: 4px;
-    margin-top: 4px;
-    margin-top: 4px;
-    width: 24px;
-    height: 4px;
-} */
+
  aside {
     position: fixed;
     display: block;
@@ -29,7 +19,7 @@
     top: 100px;
     left: 50%;
     width: 30%;
-    height: 50em;
+    height: 60%;
     z-index: 2;
 }
 .menu_image {

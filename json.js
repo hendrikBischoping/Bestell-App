@@ -3,29 +3,33 @@ let menus = [
         'name': 'Pizza Magerita',
         'price': 12.99,
         'png': './img/pizza-magerita.jpg',
-        'description': '<b>"Einfach" lecker: </b><br>Pizza mit Tomaten, Morzarella und Basilikum'
+        'description': '<b>"Einfach" lecker: </b><br>Pizza mit Tomaten, Morzarella und Basilikum',
+        'amount': 1
     },
     {
         'name': 'Pizza Salami',
         'price': 13.99,
         'png': './img/pizza-salami.jpg',
-        'description': '<b>Der Klassiker: </b><br>Pizza mit zwei sorten Salami und Käse'
+        'description': '<b>Der Klassiker: </b><br>Pizza mit zwei sorten Salami und Käse',
+        'amount': 1
     },
     {
         'name': 'Pizza Hawaii',
         'price': 14.99,
         'png': './img/pizza-hawaii.jpg',
-        'description': '<b>Man liebt sie, oder man hasst sie: </b><br>Pizza mit Ananas, Kochschinken und Käse'        
+        'description': '<b>Man liebt sie, oder man hasst sie: </b><br>Pizza mit Ananas, Kochschinken und Käse'      ,
+        'amount': 1
     },
     {
         'name': 'Pizza Diavolo',
         'price': 15.99,
         'png': './img/pizza-diavolo.jpg',
-        'description': '<b>Auf die Schärfe kommt es an: </b><br>Pizza mit scharfer Salami, scharfen Pepperoni, Oliven und Käse'
+        'description': '<b>Auf die Schärfe kommt es an: </b><br>Pizza mit scharfer Salami, scharfen Pepperoni, Oliven und Käse',
+        'amount': 1
     }
-]
+];
 
-
+let shoppingCartArray = [];
 
 
 
