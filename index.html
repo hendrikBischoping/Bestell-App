@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="general-style.css">
     <link rel="stylesheet" href="style.css">
     <title>Bestell-App</title>
     <script src="./json.js"></script>
-    <script src="./script.js"></script>
+    <script src="./scripts.js"></script>
     <script src="./template.js"></script>
 </head>
-<body  class="p120" onload="init()">
-    <header>
+<body onload="renderMenus()">
+    <header class="p120">
         <h1>Bestell-App</h1>
-        <button onclick="openShoppingCart()">Warenkorb</button>
     </header>
-    <main>
-        <aside class="p40 d_none" id="shoppingCart">
-            <div class="shoppingCart">
-                <h2>Warenkorb</h2>
-                <div id="shoppingCartList">list</div>
-            </div>
-        </aside>
-        <section id="pizza_section">
-            <h2>Pizzen</h2>
-            <div id="menusContent"></div>
+    <main class="m_auto p120 d_flex">
+        <div class="allSections">
+            <section class="buyed_overlay d_none" id="buyed_overlay">
+                <div class="thanks_for_buying d_none" id="thanks_for_buying">
+                    <h2>Vielen Dank für Ihre Bestellung!</h2>
+                    <p>Ihr Essen wird schon in Kürze geliefert!</p>
+                    <button class="close_overlay_btn" onclick="toggleBuyedOverlay()">Schließen</button>
+                </div>
+            </section>
+            <section id="pizza_section">
+                <h2>Pizzen</h2>
+                <img src="./img/pizza-diavolo.jpg" alt="" class="menus_img">
+                <div id="menusContent"></div>
+            </section>
+            <button class="small_size_cart d_none" id="buy_btn_dialog" onclick="emptyCart();toggleBuyedOverlay()">
+                <p>Jetzt bestellen: </p><span class="price" id="total-price"></span><p> €</p>
+            </button>
+                <div id="small_size_cart_list" class="d_none"></div>
+            </section>
+        </div>
+        <section class="side_cart d_flex">
+            <div id="division_line"></div>
+            <aside id="shoppingCartSection">
+                <div class="shoppingCart" id="shoppingCart">
+                    <h2 id="cart_headline_1">Warenkorb</h2>
+                    <h2 id="cart_headline_2" onclick="toggleSmallCart()">Warenkorb</h2>
+                    <button id="buy_btn_sticky" class="d_none" onclick="emptyCart();toggleBuyedOverlay()"><p>Jetzt bestellen für </p> 
+                        <div id="total_price_side"></div> <p> €</p>
+                    </button>
+                    <div class="shoppingCartMenus" id="shoppingCartMenus">
+                        <div id="shoppingCartList"></div>
+                    </div>
+                </div>
+            </aside>
         </section>
     </main>
 </body>
-</html>
+</html> 
